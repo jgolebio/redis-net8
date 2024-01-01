@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  categories-api:
+    image: ${DOCKER_REGISTRY-}categoriesapi
+    build:
+      context: .
+      dockerfile: src/services/categories-api/Dockerfile
+    ports:
+      - "62555:8080"
+      - "62556:8081"
+
