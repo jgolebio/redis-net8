@@ -1,0 +1,5 @@
+﻿@categories-api_HostAddress = https://localhost:7152
+
+GET {{categories-api_HostAddress}}/categories
+
+###
