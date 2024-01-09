@@ -9,4 +9,12 @@ services:
     ports:
       - "62555:8080"
       - "62556:8081"
+  cache:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+volumes:
+  cache:
+    driver: local
 
